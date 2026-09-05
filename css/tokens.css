@@ -1,0 +1,67 @@
+/* ============================================================
+   DESIGN TOKENS — deep navy / electric blue → violet
+   ============================================================ */
+:root {
+  /* ---- surfaces ---- */
+  --bg-0: #05060C;   /* page ground */
+  --bg-1: #080A12;
+  --bg-2: #0C0F1B;   /* band */
+  --bg-3: #10142270; /* glass card */
+  --card:  #0D111E;
+  --card-2:#111729;
+  --card-hi:#161E36;
+
+  /* ---- lines ---- */
+  --line-1: rgba(120, 150, 255, .08);
+  --line-2: rgba(120, 150, 255, .15);
+  --line-3: rgba(120, 150, 255, .26);
+
+  /* ---- text ---- */
+  --tx-1: #EEF1FA;
+  --tx-2: #A8B0C8;
+  --tx-3: #7B849E;
+  --tx-4: #545C74;
+
+  /* ---- accents ---- */
+  --blue:    #3E8BFF;   /* primary electric blue */
+  --blue-lt: #6FB2FF;
+  --violet:  #8B5CF6;
+  --violet-lt:#A78BFA;
+  --indigo:  #5B6CFF;
+  --mint:    #38D9A9;   /* success only */
+  --alert:   #F2566A;
+  --amber:   #F5B24A;   /* rare highlight */
+
+  --blue-rgb: 62, 139, 255;
+  --violet-rgb: 139, 92, 246;
+
+  --grad: linear-gradient(100deg, var(--blue-lt) 0%, var(--blue) 38%, var(--violet) 100%);
+  --grad-soft: linear-gradient(100deg, rgba(var(--blue-rgb), .18), rgba(var(--violet-rgb), .18));
+
+  /* ---- type ---- */
+  --font-display: 'Outfit', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-body: 'Outfit', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+
+  /* ---- rhythm ---- */
+  --shell: 1200px;
+  --pad-x: clamp(18px, 4.5vw, 44px);
+  --sec-y: clamp(64px, 8vh, 110px);
+  --r-sm: 8px;
+  --r-md: 14px;
+  --r-lg: 20px;
+  --r-xl: 26px;
+
+  /* ---- motion ---- */
+  --ease: cubic-bezier(.22, .68, .28, 1);
+  --ease-out: cubic-bezier(.16, 1, .3, 1);
+  --t-fast: .18s;
+  --t: .32s;
+
+  /* ---- effects ---- */
+  --shadow: 0 20px 50px -26px rgba(0, 0, 0, .9);
+  --shadow-blue: 0 16px 40px -18px rgba(var(--blue-rgb), .55);
+  --header-h: 72px;
+}
+
+@media (max-width: 760px) { :root { --header-h: 62px; } }
